@@ -445,3 +445,8 @@ a{
 .link:active{
     opacity: 0.6;
 }
+.visibility{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
