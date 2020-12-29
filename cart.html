@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>Shopping cart</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -25,41 +25,78 @@
             </div>
         </header>
         <div class="sub_header">
-            <h1 class="sub_header__title">Registration</h1>
+            <h1 class="sub_header__title">Shopping cart</h1>
         </div>
         <main class="container">
-            <div class="registration_block">
-                <form action="form.php" method="POST" class="registration_block__form">
-                    <p class="form_title">Your name</p>
-                    <input type="text" name="firstname" placeholder="First Name">
-                    <input type="text" name="lastname" placeholder="Last Name">
-                    <fieldset class="sex-block">
-                        <input type="radio" name="sex" id="male">
-                        <label for="male">Male</label>
-                        <input type="radio" name="sex" id="female"> 
-                        <label for="female">Female</label>
-                    </fieldset>
-                    <p class="form_title">Login details</p>
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                    <p class="tip-text">Please use 8 or more characters, with at least 1 
-                        number and a mixture of uppercase and lowercase letters</p>
-                    <button class="button-bgc" type="submit" name="reg_button">Join now &nbsp;&nbsp; &rarr;</button>
-                </form>
-                <div class="registration_block__loyalty_program">
-                    <p class="registration_block__title">
-                        loyalty has it's perks
-                    </p>
-                    <p class="registration_block__text">
-                        Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-                    </p>
-                    <ul class="registration_block__list">
-                        <li class="registration_block__item">15% off welcome offer</li>
-                        <li class="registration_block__item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="registration_block__item">$10 off a purchase on your birthday</li>
-                        <li class="registration_block__item">Early access to products</li>
-                        <li class="registration_block__item">Exclusive offers & rewards</li>
+            <div class="cart_block">
+                <div class="cart_block__products_list">
+                    <ul class="cart_block__products_list-list">
+                        <li class="cart_block__products_list-item">
+                            <img src="img/white_guy.jpg" alt="white_guy" class="cart_block__img">
+                            <div class="cart_block__product_info">
+                                <p class="cart_block__product_title">
+                                    mango people <br> t-shirt
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    price: <span class="pink">$300</span>
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    color: red
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    size: Xl
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    quantity: <span class="q_border">2</span>
+                                </p>
+                            </div>
+                            <a href="#" class="close"></a>
+                        </li>
+                        <li class="cart_block__products_list-item">
+                            <img src="img/white_guy.jpg" alt="white_guy" class="cart_block__img">
+                            <div class="cart_block__product_info">
+                                <p class="cart_block__product_title">
+                                    mango people <br> t-shirt
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    price: <span class="pink">$300</span>
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    color: red
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    size: Xl
+                                </p>
+                                <p class="cart_block__product_info_list">
+                                    quantity: <span class="q_border">2</span>
+                                </p>
+                            </div>
+                            <a href="#" class="close"></a>
+                        </li>
                     </ul>
+                    <div class="cart_block__function_block">
+                        <a href="#" class="cart_block__function_block-link button-empty">Clear shopping cart</a>
+                        <a href="#" class="cart_block__function_block-link button-empty">Continue shopping</a>
+                    </div>
+                </div>
+                <div class="cart_block__shipping_info">
+                    <form action="index.php" class="cart_block__shipping_info-form">
+                        <p class="form_title">Shipping address</p>
+                        <input type="text" name="firstname" placeholder="Bangladesh">
+                        <input type="text" name="lastname" placeholder="State">
+                        <input type="text" name="lastname" placeholder="Postcode / Zip">
+                        <button type="submit" class="button-empty">Get a quote</button>
+                    </form>
+                    <div class="cart_block__total_block">
+                        <p class="cart_block__subtotal_text">
+                            sub total <span>$900</span>
+                        </p>
+                        <p class="cart_block__total_text">
+                            grand total <span class="pink">$900</span>
+                        </p>
+                        <hr>
+                        <a href="#" class="cart_block__checkout_link button-bgc">proceed to checkout</a>
+                    </div>
                 </div>
             </div>
         </main>
