@@ -1,21 +1,21 @@
 
-.subscribe_block{
+.subscribe_block {
     background: url(../img/subscribe-bg.jpg);
     height: 448px;
     position: relative;
     display: flex;
 } 
-.single-comment, .subscribe-form{
+.single-comment, .subscribe-form {
     z-index: 20;
 }
-.subscribe_block .single-comment img{
+.subscribe_block .single-comment .avatar {
     width: 96px;
     margin-bottom: 30px;
 }
-.subscribe_block .single-comment .comment{
+.subscribe_block .single-comment .comment {
     width: 360px;
 }
-.subscribe_block .single-comment{
+.subscribe_block .single-comment {
     width: 50%;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
     font-size: 20px;
     color: #222224;
 }
-.subscribe_block .subscribe-form{
+.subscribe_block .subscribe-form {
     width: 50%;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
     flex-direction: column;
     text-align: center;
 }
-.subscribe-form .form_input{
+.subscribe-form .form_input {
     width: 223px;
     height: 50px;
     background: #E1E1E1;
@@ -48,7 +48,7 @@
     opacity: 0.67;
     padding-left: 22px;
 }
-.subscribe-form .form_button{
+.subscribe-form .form_button {
     width: 100px;
     height: 53px;
     margin-left: -4px;
@@ -60,22 +60,22 @@
     font-weight: normal;
     font-size: 14px;
 }
-.subscribe-form .form_button:hover{
+.subscribe-form .form_button:hover {
     cursor: pointer;
     color: #F16D7F;
     background-color: #fff;
 }
 
-.subscribe-form .form_input:focus{
+.subscribe-form .form_input:focus {
     outline: none;
 }
-.subscribe-form .subs{
+.subscribe-form .subs {
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
     text-transform: uppercase;
 }
-.subscribe-form p{
+.subscribe-form .description {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -83,13 +83,13 @@
     margin-bottom: 32px;
     margin-top: 10px;
 }
-.footer-bottom{
+.footer-bottom {
     height: 80px;
     background-color: #222;
     display: flex;
     justify-content: space-between;
 }
-.footer-bottom .copyright{
+.footer-bottom .copyright {
     margin-left: 235px;
     padding-top: 30px;
     font-family: Lato;
@@ -98,12 +98,12 @@
     font-size: 16px;
     color: #FBFBFB;
 }
-.footer-bottom .social-networks-list{
+.footer-bottom .social-networks-list {
     display: flex;
     margin-top: 24px;
     margin-right: 230px;
 }
-.footer-bottom .social-networks-list .soc-net-item a{
+.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link {
     display: block;
     width:32px;
     height: 32px;
@@ -112,10 +112,10 @@
     background: #fff;
     margin-left: 8px;
 }
-.footer-bottom .social-networks-list .soc-net-item a:hover{
+.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover {
     background: #F16D7F;
 /*    fill: #fff;*/
 }
-.footer-bottom .social-networks-list .soc-net-item a:hover path{
+.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover path {
     fill: #fff;
 }

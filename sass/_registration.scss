@@ -1,10 +1,10 @@
-.registration_block{
+.registration_block {
     background-color: $light-gray-bgc;
     display: flex;
     margin-top: 65px;
     margin-bottom: 96px;
 }
-.registration_block__form{
+.registration_block__form {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -12,21 +12,21 @@
     font-weight: 300;
 }
 
-.registration_block__loyalty_program{
+.registration_block__loyalty_program {
     width: 70%;
     padding-left: 130px;
     font-size: 24px;
     color: #000;
     font-weight: 300;
 }
-.registration_block__title{
+.registration_block__title {
     text-transform: uppercase;
 }
-.registration_block__text{
+.registration_block__text {
     margin: 22px 0;
     width: 655px;
 }
-.sex-block{
+.sex-block {
     border: none;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -34,32 +34,32 @@
 .registration_block
 input[type="text"], 
 input[type="email"], 
-input[type="password"]{
+input[type="password"] {
     @extend %input-type-text;
 }
 .registration_block
 input[type="text"]::placeholder, 
 input[type="email"]::placeholder, 
-input[type="password"]::placeholder{
+input[type="password"]::placeholder { 
     color:#B1B1B1;
 }
-.tip-text{
+.tip-text {
     margin-top: 16px;
     margin-bottom: 39px;
     color: #b1b1b1;
 }
-input[name="sex"]{
+input[name="sex"] {
     margin-right: 10px;
 }
-#female{
+#female {
     margin-left: 20px;
 }
-.registration_block__item{
+.registration_block__item {
     margin-top: 17px;
     padding-left: 43px;
     position: relative;
 }
-.registration_block__item:before{
+.registration_block__item:before {
     content: '';
     width: 20px;
     height: 16px;
@@ -70,17 +70,17 @@ input[name="sex"]{
     left: 0;
 }
 
-@media screen and (min-width: 700px) and (max-width:768px) {
-    .header{
+@media (min-width: 700px) and (max-width:768px) {
+    .header {
         padding: 0;
         padding: 0 32px 0 32px;
         align-items: center;
     }
-    .main{
+    .main {
         margin: 0 auto;
         width: 767px;
     }
-    .sub_header__title{
+    .sub_header__title {
         padding-left: 16px;
     }
     .registration_block__loyalty_program {
@@ -127,16 +127,16 @@ input[name="sex"]{
         margin-left: 32px;
     }
 }
-@media screen and (min-width: 300px) and (max-width: 390px) {
-    .main{
+@media (min-width:275px) and (max-width:574px) {
+    .main {
         margin: 0 auto;
         width: 375px;
     }
-    .header{
+    .header {
         padding: 0 16px 0 16px;
         align-items: center;
     }
-    .sub_header__title{
+    .sub_header__title {
         padding-left: 103px;
     }
     .registration_block{
@@ -170,15 +170,17 @@ input[name="sex"]{
         flex-direction: column;
         font-size: 20px;
         color: #222224;
-        margin-top: -160px;
+        margin-top: -50px;
     }
     .subscribe_block .subscribe-form {
         width: auto;
         display: flex;
         margin-top: 70px;
     }
-    .footer-bottom{
+    .footer-bottom {
         flex-direction: column-reverse;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .footer-bottom .social-networks-list {
         margin-left: 114px;

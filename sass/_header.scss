@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     background-color: #222222;
     height: 75px;
@@ -6,27 +6,27 @@
     padding: 0 230px 0 230px;
     align-items: center;
 }
-.header_search-block{
+.header_search-block {
     display: flex;
 }
-.header_search-block .search img{
+.header_search-block .search .search-img {
     margin-left: 41px;
     margin-top: 10px;
 }
-.header-navigation{
+.header-navigation {
     display: flex;
 }
-.header-navigation .header_nav-item{
+.header-navigation .header_nav-item {
     width:32px;
     height: 32px;
 }
-.header-navigation .header_nav-item:nth-child(2n){
+.header-navigation .header_nav-item:nth-child(2n) {
     margin: 0 34px;
 }
-.header-navigation .header_nav-item .cart{
+.header-navigation .header_nav-item .cart {
     position: relative;
 }
-.header-navigation .header_nav-item .cart span{
+.header-navigation .header_nav-item .cart .counter {
     position: absolute;
     display: block;
     width: 19px;
@@ -40,47 +40,47 @@
     line-height: 20px;
     font-size: 12px;
 }
-.menu:before{
+.menu:before {
     content: url(../img/menu.svg);
 }
-.header_nav-item a:hover{
+.header_nav-item .header_nav-link:hover {
     opacity: 0.8;
 }
-.header_nav-item a:active{
+.header_nav-item .header_nav-link:active {
     opacity: 0.6;
 }
-.logo:hover{
+.logo:hover {
     opacity: 0.8;
 }
-.logo:active{
+.logo:active {
     opacity: 0.6;
 }
-.search:hover{
+.search:hover {
     opacity: 0.8;
     cursor: pointer;
 }
-.search:active{
+.search:active {
     opacity: 0.6;
 }
-.account:before{
+.account:before {
     content: url(../img/account.svg);
 }
-.cart:before{
+.cart:before {
     content: url(../img/cart.svg);
 }
 
-.right-menu__link:hover{
+.right-menu__link:hover {
     opacity: 0.8;
 }
-.promo_block__item:hover{
+.promo_block__item:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.right-menu__link:active{
+.right-menu__link:active {
     opacity: 0.6;
 }
-.right-menu{
+.right-menu {
     position: absolute;
     width: 233px;
     height: 768px;
@@ -92,29 +92,29 @@
     -moz-box-shadow:    0px 1px 12px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 1px 12px 0px rgba(50, 50, 50, 0.75);
 }
-.right-menu .right-menu__title{
+.right-menu .right-menu__title {
     font-weight: 800;
     font-size: 14px;
     text-transform: uppercase;
     font-style: normal;
     padding-top: 10px;
 }
-.right-menu__category .right-menu__title{
+.right-menu__category .right-menu__title {
     padding-top: 20px;
     font-weight: 400;
 }
-.right-menu__category .right-menu__category-item{
+.right-menu__category .right-menu__category-item {
     padding-top: 12px;
     padding-left: 20px;
     text-transform: capitalize;
 }
-.close{
+.close {
     background: url(../img/cross.png);
     width: 12px;
     height: 12px;
     display: block;
 }
-.right-menu .close{
+.right-menu .close {
     margin-top: 16px;
     margin-bottom: 10px;
     margin-left: 203px;
