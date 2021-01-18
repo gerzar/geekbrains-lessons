@@ -190,8 +190,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   color: #222224;
 }
