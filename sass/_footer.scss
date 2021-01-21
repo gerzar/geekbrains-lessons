@@ -50,9 +50,9 @@
     width: 100px;
     height: 53px;
     margin-left: -4px;
-    background-color: #F16D7F;
+    background-color: $pink-color;
     color: white;
-    border: 1px solid #F16D7F;
+    border: 1px solid $pink-color;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
     font-weight: normal;
@@ -60,7 +60,7 @@
 }
 .subscribe-form .form_button:hover {
     cursor: pointer;
-    color: #F16D7F;
+    color: $pink-color;
     background-color: #fff;
 }
 
@@ -102,17 +102,18 @@
     margin-right: 230px;
 }
 .footer-bottom .social-networks-list .soc-net-item .soc-net-item-link {
-    display: block;
-    width:32px;
+    display: flex;
+    width: 32px;
     height: 32px;
     text-align: center;
     line-height: 35px;
     background: #fff;
     margin-left: 8px;
+    align-items: center;
+    justify-content: center;
 }
 .footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover {
-    background: #F16D7F;
-/*    fill: #fff;*/
+    background: $pink-color;
 }
 .footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover path {
     fill: #fff;
