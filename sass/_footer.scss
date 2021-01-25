@@ -1,4 +1,3 @@
-
 .subscribe_block {
     background: url(../img/subscribe-bg.jpg);
     height: 448px;
@@ -109,7 +108,7 @@
     margin-top: 24px;
     margin-right: 230px;
 }
-.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link {
+.social-networks-list .soc-net-item .soc-net-item-link {
     display: flex;
     width: 32px;
     height: 32px;
@@ -120,9 +119,9 @@
     align-items: center;
     justify-content: center;
 }
-.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover {
+.social-networks-list .soc-net-item .soc-net-item-link:hover {
     background: $pink-color;
 }
-.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover path {
+.social-networks-list .soc-net-item .soc-net-item-link:hover path {
     fill: #fff;
 }

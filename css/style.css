@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 ol, ul {
   list-style: none;
   padding: 0;
@@ -52,6 +47,8 @@ a {
   visibility: hidden;
   width: 0;
   height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .link:hover {
@@ -152,7 +149,7 @@ input[type="password"], .registration_block input[type="text"] {
 }
 
 .promo_homepage .promo_homepage__right-block .text-block {
-  margin: 335px 331px 335px 76px;
+  margin: 335px 331px 300px 76px;
   font-family: Lato;
   text-transform: uppercase;
   border-left: 12px solid #f16d7f;
@@ -679,7 +676,7 @@ input[type="password"]::placeholder {
   margin-right: 230px;
 }
 
-.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link {
+.social-networks-list .soc-net-item .soc-net-item-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,11 +694,11 @@ input[type="password"]::placeholder {
           justify-content: center;
 }
 
-.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover {
+.social-networks-list .soc-net-item .soc-net-item-link:hover {
   background: #F16D7F;
 }
 
-.footer-bottom .social-networks-list .soc-net-item .soc-net-item-link:hover path {
+.social-networks-list .soc-net-item .soc-net-item-link:hover path {
   fill: #fff;
 }
 
