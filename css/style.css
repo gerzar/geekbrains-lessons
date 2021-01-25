@@ -546,6 +546,13 @@ input[type="password"]::placeholder {
 .subscribe_block .single-comment .avatar {
   width: 96px;
   margin-bottom: 30px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.subscribe_block .single-comment .avatar:hover {
+  width: 105px;
+  cursor: pointer;
 }
 
 .subscribe_block .single-comment .comment {
@@ -719,8 +726,8 @@ input[type="password"]::placeholder {
   display: flex;
 }
 
-.header_search-block .search .search-img {
-  margin-left: 41px;
+.header_search-block .search {
+  margin-left: 20px;
   margin-top: 10px;
 }
 
@@ -778,8 +785,14 @@ input[type="password"]::placeholder {
   opacity: 0.6;
 }
 
+.search {
+  opacity: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
 .search:hover {
-  opacity: 0.8;
+  opacity: 0.3;
   cursor: pointer;
 }
 

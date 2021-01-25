@@ -11,6 +11,14 @@
 .subscribe_block .single-comment .avatar {
     width: 96px;
     margin-bottom: 30px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.subscribe_block .single-comment .avatar:hover {
+    width: 105px;
+    cursor: pointer;
 }
 .subscribe_block .single-comment .comment {
     width: 360px;

@@ -9,8 +9,8 @@
 .header_search-block {
     display: flex;
 }
-.header_search-block .search .search-img {
-    margin-left: 41px;
+.header_search-block .search {
+    margin-left: 20px;
     margin-top: 10px;
 }
 .header-navigation {
@@ -55,8 +55,15 @@
 .logo:active {
     opacity: 0.6;
 }
+.search {
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
 .search:hover {
-    opacity: 0.8;
+    opacity: 0.3;
     cursor: pointer;
 }
 .search:active {
