@@ -1338,4 +1338,16 @@ input[name="sex"] {
     text-transform: uppercase;
   }
 }
+
+.cart-list-master {
+    z-index: 1000;
+    position: fixed;
+    background: #fff;
+    padding: 20px;
+    top: 10px;
+    right: 10px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 80%;
+}
 /*# sourceMappingURL=style.css.map */
