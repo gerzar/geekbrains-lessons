@@ -183,5 +183,44 @@
     </footer>
     </div>
     <script src="js/products.js"></script>
+    <script>
+        // function duplicateEncode(word){
+        //     wordArray = word.toLowerCase().split('');
+        //     let result = wordArray.filter((v, i, a) => a.indexOf(v) === i)
+        //         .map(v => [v, wordArray.filter(x => x === v).length]);
+        //     result.forEach((res) => {
+        //         if(res[1] > 1){
+        //             let reg = new RegExp(`\\${res[0]}`, 'gi') ;
+        //             word = word.replace(reg, ')');
+        //         }else{
+        //             word = word.replace(res[0], '(');
+        //         }
+        //     });
+        //     return word;
+        // }
+
+
+        // function duplicateEncode(str){
+        // //create a var to hold string value that IGNORES case
+        // var word = str.toLowerCase();
+        // //create a var to hold the finished string to return after it's looped through 
+        // var unique = '';
+        // //loop through all letters in string
+        //   for (var i = 0; i < word.length; i++) {
+        // //check for any characters that repeat
+        //     if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) {
+        // //for each character that never dupes, place (
+        //       unique += '(';
+        //     } else
+        // //for each character that IS a dupe, place )
+        //     unique += ')';
+        //   }
+        // //return the full string value where '(' are non duped and all')' are duped
+        //   return unique;
+
+        // }
+        
+        // console.log(duplicateEncode("(( @"));
+    </script>
 </body>
 </html>
