@@ -1350,4 +1350,16 @@ input[name="sex"] {
     overflow-y: scroll;
     height: 80%;
 }
+.close-button {
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
