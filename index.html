@@ -13,24 +13,38 @@
             <div class="header_search-block">
                 <div class="logo"><a href="/index.html"><img src="img/logo.png" alt="logo"></a></div>
                 <img class="search-img" src="img/search.svg" alt="search">
-                <input v-model="search" v-on:input="searchHandler" class="search">
+                <!-- <input v-model="search" v-on:input="searchHandler" class="search"> -->
+
             </div>
+            <search 
+            v-on:search="searchHandler"
+            ></search>
             <div class="header_nav-block">
                 <ul class="header-navigation">
                     <li class="header_nav-item"><a class="header_nav-link menu" href="#"></a></li>
                     <li class="header_nav-item"><a class="header_nav-link account" href="/registration.html"></a></li>
-                    <li class="header_nav-item" v-on:click.prevent="showCart"><a class="header_nav-link cart" href="#"><span class="counter">5</span></a></li>
+                    <li class="header_nav-item" ><a class="header_nav-link cart" href="#"><span class="counter">5</span></a></li>
                 </ul>
             </div>
         </header>
-        <div v-if="isCartShow" class="cart-list-master">
+        <cart v-on:remove="removeFromCartHandler">
+            <goods-item 
+              v-for="good in cart" 
+              v-bind:title="good.title" 
+              v-bind:price="good.price"
+              v-bind:id="good.id" 
+            />
+        </cart>
+
+
+        <!-- <div v-if="isCartShow" class="cart-list-master">
             <p class="close-button" v-on:click.prevent="showCart">x</p>
             <ul  class="cartlist-master_list">
                 <li v-for="(item, index) in cart"><p>{{item.title}}</p><p>Цена:{{item.price}}</p><button :data-index="item.id" v-on:click.prevent="removeFromCart">Remove</button><hr /></li>
                 <p v-if="cart.length > 0">Итоговая сумма {{getSummInCart}}$</p>
                 <p v-if="cart.length == 0">Корзина пуста</p>
             </ul>
-        </div>
+        </div> -->
         <main class="container">
             <h1 class="visibility">THE BRAND OF luxerious fashion</h1>
             <div class="right-menu">
