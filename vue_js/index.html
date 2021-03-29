@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div id="vue">
+		<p>{{insertToVue()}}</p>
+		<input v-model="search" v-on:input="filterProducts">
+		<ul>
+			<li v-for="(item, index) in filteredArray">{{item.name}} --- {{item.price}} --- {{item.description}} <button :data-index="index" v-on:click.prevent="addToCart">Add</button></li>
+		</ul>
+		<div class="cart">
+			<ul>
+				<li v-if="cart" v-for="item in cart">{{item.name}}----{{item.price}} <button :data-index="item.id" v-on:click.prevent="removeFromCart">Remove</button></li>
+			</ul>
+			<p>Итоговая сумма <b>{{getSummInCart}}$</b></p>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="vue-pr.js"></script>
+</body>
+</html>
